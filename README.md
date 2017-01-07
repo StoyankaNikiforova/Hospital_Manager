@@ -1,9 +1,3 @@
-Hospital Manager
-
-On Wednesday we create a simple hospital database for patients, doctors and hospital stays.
-
-But one hospital cannot be managed only with this information.
-
 Our task for today is to create a working system, which can be used by both doctors and patients.
 
 First we need a Base user, which will be inherited by the doctor and patient. Our user need to have username, password and age.
