@@ -1,0 +1,35 @@
+INSERT_INTO_USER = ''' INSERT INTO USER(USERNAME, PASSWORD, AGE)
+                     VALUES(?, ?, ?)
+                    '''
+
+
+SELECT_USERS = '''SELECT *
+                  FROM USER
+                  '''
+
+
+SELECT_DOCTORS = '''SELECT *
+                FROM DOCTOR
+                '''
+
+PROMOTE_TO_DOCTOR = ''' INSERT INTO DOCTOR(ID, ACADEMIC_TITLE)
+VALUES(?, ?)
+'''
+
+
+PROMOTE_TO_PATIENT = ''' INSERT INTO PATIENT(ID, DOCTOR_ID)
+VALUES(?, ?)
+'''
+
+SELECT_PATIENTS = '''SELECT *
+                  FROM PATIENT
+                  '''
+
+
+INSERT_INTO_HOSPITAL_STAY = ''' INSERT INTO HOSPITAL_STAY(STARTDATE, ENDDATE,
+ ROOM, INJURY, PATIENT_ID)
+VALUES(?, ?, ?, ?, ?)'''
+
+
+INSERT_INTO_VISITATION = ''' INSERT INTO VISITATION(PATIENT_ID, DOCTOR_ID, START_HOUR)
+VALUES(?, ?, ?)'''
